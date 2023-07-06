@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke tests" thread-count="1" verbose="10">
+    <test  name="Test">
+        <classes>
+            <class name="test.singInSingUp.Test" />
+        </classes>
+    </test>
+    <test  name="Sing up email">
+        <classes>
+            <class name="test.singInSingUp.SignUpEmail" />
+        </classes>
+    </test>
+    <test  name="Sing up with Google">
+        <classes>
+            <class name="test.singInSingUp.SingUpWithGoogle" />
+        </classes>
+    </test>
+    <test  name="Log in with emial">
+        <classes>
+            <class name="test.singInSingUp.LogInEmail" />
+        </classes>
+    </test>
+    <test  name="Forgot password">
+        <classes>
+            <class name="test.singInSingUp.ForgotPassword" />
+        </classes>
+    </test>
+    <test  name="Login by google account">
+        <classes>
+            <class name="test.singInSingUp.LogInGoogle" />
+        </classes>
+    </test>
+    <test  name="Create list - unregister user">
+        <classes>
+            <class name="test.mainView.CreateListUnregisterUser" />
+        </classes>
+    </test>
+    <test  name="Create list - register user">
+        <classes>
+            <class name="test.mainView.CreateListRegisterUser" />
+        </classes>
+    </test>
+    <test  name="Log out">
+        <classes>
+            <class name="test.profile.LogOut" />
+        </classes>
+    </test>
+    <test  name="Change email">
+        <classes>
+            <class name="test.profile.ChangeEmail" />
+        </classes>
+    </test>
+    <test  name="Change password">
+        <classes>
+            <class name="test.profile.ChangePassword" />
+        </classes>
+    </test>
+</suite>
